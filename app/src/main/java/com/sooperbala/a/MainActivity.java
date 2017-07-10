@@ -62,4 +62,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this,selectPeople.class);
         startActivity(i);
     }
+
+    public void goTest(View view){
+        Intent i = new Intent(this,Home.class);
+        startActivity(i);
+    }
 }
