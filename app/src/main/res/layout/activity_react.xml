@@ -26,8 +26,8 @@
             android:layout_margin="16dp"
             android:contextClickable="true"
             android:elevation="5dp"
-            android:onClick="goFood"
-            android:src="@drawable/a1"/>
+            android:onClick="sad"
+            android:src="@drawable/c1"/>
 
         <ImageView
             android:id="@+id/imp2"
@@ -36,8 +36,8 @@
             android:layout_margin="16dp"
             android:contextClickable="true"
             android:elevation="5dp"
-            android:onClick="goOut"
-            android:src="@drawable/a2"/>
+            android:onClick="happy"
+            android:src="@drawable/c2"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -55,8 +55,8 @@
             android:layout_margin="16dp"
             android:contextClickable="true"
             android:elevation="5dp"
-            android:onClick="React"
-            android:src="@drawable/a3"/>
+            android:onClick="angry"
+            android:src="@drawable/c3"/>
 
         <ImageView
             android:id="@+id/imp4"
@@ -65,8 +65,8 @@
             android:layout_margin="16dp"
             android:contextClickable="true"
             android:elevation="5dp"
-            android:onClick="goGame"
-            android:src="@drawable/a4"/>
+            android:onClick="hungry"
+            android:src="@drawable/c4"/>
     </LinearLayout>
 
     <LinearLayout
@@ -83,7 +83,7 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_margin="16dp"
-            android:clickable="true"
+            android:contextClickable="true"
             android:elevation="5dp"
             android:onClick="yess"
             android:src="@drawable/tick"/>
@@ -93,6 +93,7 @@
             android:layout_width="150dp"
             android:layout_height="80dp"
             android:layout_marginTop="15dp"
+            android:clickable="true"
             android:elevation="5dp"
             android:onClick="backit"
             android:src="@drawable/back"/>
@@ -102,6 +103,7 @@
             android:layout_width="150dp"
             android:layout_height="80dp"
             android:layout_marginTop="15dp"
+            android:clickable="true"
             android:elevation="5dp"
             android:onClick="noo"
             android:src="@drawable/wrong"/>

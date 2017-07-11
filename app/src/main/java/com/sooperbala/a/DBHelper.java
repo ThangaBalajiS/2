@@ -5,8 +5,11 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.util.ArrayList;
+
+import static android.content.ContentValues.TAG;
 
 /**
  * Created by bala on 15-06-2017.
@@ -14,7 +17,7 @@ import java.util.ArrayList;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    static final String DATABASE_NAME = "proDBdd";
+    private static final String DATABASE_NAME = "balabase";
 
     public DBHelper(Context context) {
         super(context, DATABASE_NAME , null, 1);
@@ -58,12 +61,13 @@ public class DBHelper extends SQLiteOpenHelper {
 
         //hp = new HashMap();
         SQLiteDatabase db = this.getReadableDatabase();
+        Log.i(TAG, "getAllPeople: im here");
         Cursor res =  db.rawQuery( "select * from people", null );
         res.moveToFirst();
 
 
 
-
+        Log.i(TAG, "getAllPeople: im here");
 
         while(!res.isAfterLast()){
 

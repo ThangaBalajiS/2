@@ -76,11 +76,11 @@ public class AddPeople extends AppCompatActivity {
         String num = etNum.getText().toString();
         DBHelper db = new DBHelper(this);
 
+        db.insertContact(name,num,getBytes(bmp));
 
+        //Toast.makeText(this,String.valueOf(db.insertContact(name,num,getBytes(bmp))),Toast.LENGTH_LONG).show();
 
-        Toast.makeText(this,String.valueOf(db.insertContact(name,num,getBytes(bmp))),Toast.LENGTH_LONG).show();
-
-        Intent i = new Intent(this,MainActivity.class);
+        Intent i = new Intent(this,selectPeople.class);
         startActivity(i);
         Toast.makeText(this,"Added Successfully",Toast.LENGTH_SHORT).show();
     }
